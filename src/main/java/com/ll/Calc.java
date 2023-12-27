@@ -7,15 +7,21 @@ public class Calc {
 
     String[] bits = exp.split(" \\+ ");
 
-    int a = Integer.parseInt(bits[0]);
-    int b = Integer.parseInt(bits[1]);
-    int c = 0;
+    int sum = 0;
 
-    if (bits.length > 2) {
-      c = Integer.parseInt(bits[2]);
+    for (int i = 0; i < bits.length; i++) {
+      int a = Integer.parseInt(bits[i]);
+      sum += a;
     }
 
-    return a + b + c;
+//    int i = 0;
+//    while (i < bits.length) {
+//      int a = Integer.parseInt(bits[i]);
+//      sum += a;
+//      i++;
+//    }
+
+    return sum;
 
 //    throw new RuntimeException("처리할 수 있는 계산식이 아닙니다");
   }
