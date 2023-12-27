@@ -95,4 +95,6 @@ public class CalcTest {
   void t15() {
     assertThat(Calc.run("10 + 5 * 2")).isEqualTo(20);
   }
+
+
 }
